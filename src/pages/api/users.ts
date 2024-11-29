@@ -12,16 +12,16 @@ export default async function handler(
 
   try {
 
-    // 从请求头获取 token
-    const token = req.headers.authorization?.replace('Bearer ', '');
+    // // 从请求头获取 token
+    // const token = req.headers.authorization?.replace('Bearer ', '');
     
-    if (!token) {
-      return res.status(401).json({ success: false, message: '未授权' });
-    }
+    // if (!token) {
+    //   return res.status(401).json({ success: false, message: '未授权' });
+    // }
 
-    // 验证 token
-    const decoded = verify(token, process.env.JWT_SECRET!) as { userId: string };
-    
+    // // 验证 token
+    // const decoded = verify(token, process.env.JWT_SECRET!) as { userId: string };
+
     // 如果传入了id,直接返回单个用户信息
     const userId = req.query.id;
     if (userId) {
