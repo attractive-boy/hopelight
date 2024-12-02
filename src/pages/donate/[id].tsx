@@ -86,7 +86,7 @@ export default function DonatePage() {
   return (
     <>
       <NavBar 
-        back="返回"
+        onBack={() => router.back()}
         style={{
           color: '#fff',
           borderBottom: '1px solid white',
