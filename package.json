@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 80",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 80",
     "lint": "next lint"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "qrcode.react": "^4.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-lottie-player": "^2.1.0",
     "react-quill": "^2.0.0",
     "recharts": "^2.13.0",
     "umi-request": "^1.4.0",
